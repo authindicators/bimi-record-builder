@@ -5,7 +5,7 @@
  * Version: 1.0.3
  * Author: Matthew Vernhout / BIMI Group
  * Author URI: https://github.com/EmailKarma
- * Plugin URI: https://github.com/authindicators/bimi-checker
+ * Plugin URI: https://github.com/authindicators/bimi-record-builder
  * License: GPL-2.0-or-later
  * Text Domain: bimi-record-builder
  */

@@ -6,7 +6,7 @@ A WordPress utility to help you generate BIMI DNS TXT records quickly and accura
 
 ## Features
 - Build a BIMI DNS TXT record from form inputs.
-- Validate HTTPS URLs for `l=` (SVG) and `a=` (VMC), highlighting errors.
+- Validate HTTPS URLs for `l=` (SVG), `a=` (VMC), and `avp=` (Avatar Preference), highlighting errors.
 - Provide a selector field with `default` as the prefilled option.
 - Output `a=;` when no VMC is supplied, per your spec.
 - Copy-to-clipboard button for quick DNS pasting.
@@ -21,11 +21,12 @@ Use this shortcode on a page or post:
 ## Installation
 1. Upload the plugin folder to `wp-content/plugins/` and activate it.
 2. Add the shortcode above to any page.
-3. Enter your domain, SVG URL (`l=`), optional VMC URL (`a=`), and the selector.
+3. Enter your domain, SVG URL (`l=`), optional VMC URL (`a=`), optional `avp=` (Avatar Preference), and the selector (uses default when not speficied).
 4. Click **Build** to generate the record, then **Copy** to copy it.
 
 **Behaviour details**
 - If `a` is not provided, the generator outputs `a=;`.
+- if `avp` is not provided, the generator outputs `avp=;`.
 - All links must use HTTPS, or the UI flags them in red.
 - The selector defaults to `default` when not supplied.
 
@@ -39,7 +40,7 @@ Use this shortcode on a page or post:
  * Version: 1.0.3
  * Author: Matthew Vernhout / BIMI Group
  * Author URI: https://github.com/EmailKarma
- * Plugin URI: https://github.com/authindicators/bimi-checker
+ * Plugin URI: https://github.com/authindicators/bimi-record-builder
  * License: GPL-2.0-or-later
  * Text Domain: bimi-record-builder
 ```
