@@ -1,0 +1,75 @@
+/* ======= assets/bimi-record-builder.css ======= */
+/* Place this content in assets/bimi-record-builder.css */
+.bimi-builder 
+	{ 
+		max-width: 880px; 
+		margin: 1.5rem auto; 
+		padding: 1rem; 
+		border: 1px solid #e2e8f0; 
+		border-radius: 12px; 
+		background: #fff; 
+	}
+.bimi-field 
+	{ 
+		margin-bottom: 1rem; 
+	}
+.bimi-field label, .bimi-output label, .bimi-field legend 
+	{ 
+		font-weight: 600; 
+		display: block; 
+		margin-bottom: 0.25rem; 
+	}
+.bimi-field input[type="text"], .bimi-field input[type="url"], .result 
+	{ 
+		width: 100%; 
+		padding: 0.6rem 0.75rem; 
+		border: 1px solid #cbd5e1; 
+		border-radius: 8px; 
+		font-family: inherit; 
+		font-size: 14px; 
+	}
+.req 
+	{ 
+		color: #d00; 
+	}
+.hint 
+	{ 
+		color: #64748b; 
+		font-size: 12px; 
+	}
+.radio-group 
+	{ 
+		display: grid; 
+		gap: 0.35rem; 
+		margin-top: 0.25rem; 
+	}
+.bimi-actions 
+	{ 
+		display: flex;		gap: 0.5rem;		margin-top: 0.75rem;	}
+.btn 
+	{ 
+		padding: 0.6rem 0.9rem;		border-radius: 8px;		border: 1px solid #cbd5e1;		background: #f8fafc;		cursor: pointer;	}
+.btn.primary 
+	{ 
+		background: #2563eb;		color: #fff;		border-color: #1d4ed8;	}
+.btn[disabled] 
+	{ 
+		opacity: 0.5;		cursor: not-allowed;	}
+.errors 
+	{ 
+		color: #b91c1c; 
+		background: #fee2e2; border: 1px solid #fecaca;		padding: 0.5rem 0.75rem;		border-radius: 8px;		margin-bottom: 0.75rem;	}
+.tooltip .tip-btn 
+	{ 
+		width: 24px; 
+		height: 24px; 
+		border-radius: 50%; 
+		border: 1px solid #cbd5e1; 
+		background: #f8fafc; 
+		cursor: help; 
+		font-weight: 700; 
+	}
+.avp-details summary 
+	{ 
+		cursor: pointer; 
+	}
