@@ -2,7 +2,7 @@
 /**
  * Plugin Name: BIMI Record Builder
  * Description: Adds a shortcode [bimi-creation-tool] that renders a form to build a BIMI TXT record string with light validation and copy-to-clipboard.
- * Version: 1.0.3
+ * Version: 1.0.4
  * Author: Matthew Vernhout / BIMI Group
  * Author URI: https://github.com/EmailKarma
  * Plugin URI: https://github.com/authindicators/bimi-record-builder
@@ -28,8 +28,8 @@ class BIMI_Record_Builder {
         $handle = 'bimi-record-builder';
         $src = plugins_url('assets/bimi-record-builder.js', __FILE__);
         $style_src = plugins_url('assets/bimi-record-builder.css', __FILE__);
-        wp_register_script($handle, $src, ['wp-i18n'], '1.0.1', true);
-        wp_register_style($handle, $style_src, [], '1.0.1');
+        wp_register_script($handle, $src, ['wp-i18n'], '1.0.4', true);
+        wp_register_style($handle, $style_src, [], '1.0.4');
     }
 
     public function render_shortcode($atts = [], $content = '') {
@@ -62,6 +62,12 @@ class BIMI_Record_Builder {
                     <label for="bimi-vmc">URL of the VMC/CMC (optional)</label>
                     <input type="url" id="bimi-vmc" name="vmc" placeholder="https://example.com/vmc.pem">
                     <small class="hint">If blank, output will note as <code>a=;</code>.</small>
+                </div>
+
+                <div class="bimi-field">
+                    <label for="bimi-lps">Local-Part Selector (lps) (optional)</label>
+                    <input type="text" id="bimi-lps" name="lps" placeholder="newsletter,offers,promotions">
+                    <small class="hint">Enter multiple values separated by commas, for example <code>newsletter,offers,promotions</code>.</small>
                 </div>
 
                 <fieldset class="bimi-field">
